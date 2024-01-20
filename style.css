@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    height: 245vh;
+    width: 200vh;
+    border: 2px solid black;
+    margin-top: 6vh;
+    margin-left: 20vh;
+    scroll-behavior: smooth;
+    position: relative;
+
+}
+.circle{
+    height: 180px;
+    width: 180px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 7vh;
+} 
+.inner-circle{
+    height: 156px; 
+    width: 156px;
+    position: absolute;
+    border: 1px solid rgb(222, 219, 219);
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 2vh; 
+    background: rgb(222, 219, 219);
+} 
+.home{
+    position: absolute;
+    display: flex;
+    margin-left: 45vh;
+    margin-top: 3vh;
+}
+.home-content h2{
+    padding: 6px;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.home-content h3{
+    padding: 6px;
+}
+.loc a{
+    padding: 0px;
+    font-size: 1.2rem;
+    justify-content: space-between;
+}
+.loc a i{
+    font-size: 1.7rem;
+    margin: 0px 1.2vh;
+    padding: 0px 2px;
+    justify-content: space-between;
+}
+.social-media a{
+    font-size: 1.2rem;
+    display: inline-flex;
+    margin: 0px 1.3vh;
+    padding: 1.2rem;
+    justify-content: center;
+    align-items:center;
+    margin: 0px 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+.home-content .share-link{
+    font-size: 1.2rem;
+   padding-right: 200px;
+}
+
+.box-design .box-container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+    gap: 3rem;
+    padding-left: 10vh;
+    padding-right: 12vh;
+    }
+    #searchbar{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1.3rem;
+        width: 30%;
+        box-sizing: border-box;
+        margin-left: 60%;
+        box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    }
+    /* #searchbar i{
+        margin-left: 50%;
+        font-size: 5%;
+    } */
+    .box-design .box-container .box{
+    height: 44vh;
+    margin-top: 5vh;
+    background: #fff;
+    border-radius: .5rem;
+    border: .2rem solid #000;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    }
+    .box-design .box-container .box h3{
+    margin-top: 7vh;
+    margin-left: 1rem;
+    color:  rgb(38, 187, 245);
+    font-size: 2.5rem;
+    
+    }
+    .box-design .box-container .box span{
+        margin-left: 1rem;
+    color: #000;
+    font-size: 1.5rem;
+    }
+    .box-design .box-container .box .share {
+    margin-left: 1rem;
+    padding-top: 2rem;
+    animation: myFunciton  0.5s ease-in-out;
+    }
+    .box-design .box-container .box .share button{
+    height: 5rem;
+    width: 8rem;
+    line-height: 4.5rem;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: .5rem;
+    border: .2rem solid blue;
+    background: blue;
+    margin:.3rem;
+    }
+    .box-design .box-container .box .share button:hover{
+    background: #fff;
+    color: #000;
+    box-shadow: .5rem .5rem rgba(22,160,133,.2);
+    
+    }
+    
+    .pagination ul{
+        width: 30%;
+        display: flex;
+       flex-wrap: wrap;
+        background: #fff;
+        padding: 8px;
+        margin-left: 50vh;
+        margin-top: 8vh;
+        box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+      }
+      .pagination ul li{
+        color: blue;
+        list-style: none;
+        line-height: 45px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        user-select: none;
+        transition: all 0.3s ease;
+      }
+      .pagination ul li.numb{
+        list-style: none;
+        height: 45px;
+        width: 45px;
+        margin: 0 3px;
+        line-height: 45px;
+        border-radius: 50%;
+      }
+      .pagination ul li.numb.first{
+        margin: 0px 3px 0 -5px;
+      }
+      .pagination ul li.numb.last{
+        margin: 0px -5px 0 3px;
+      }
+      .pagination ul li.dots{
+        font-size: 22px;
+        cursor: default;
+      }
+      .pagination ul li.btn{
+        padding: 0 20px;
+        border-radius: 50px;
+      }
+      .pagination li.active,
+      .pagination ul li.numb:hover,
+      .pagination ul li:first-child:hover,
+      .pagination ul li:last-child:hover{
+        color: #fff;
+        background: blue;
+      }
+    .button{
+      display: flex;
+    }
+    .btn{
+        position: relative;
+        height: 50px;
+        width: 120px;
+        margin: 0 4vh;
+        text-align: center;
+        font-size: 1.4rem;
+        background: #fff;
+        border: 2px solid grey;
+        border-radius: 4rem;
+        display: inline;
+        margin-left: 42vh;
+        padding-left: 1rem;
+        margin-top: 7vh;
+    }
+    .btn-newer{
+        position: relative;
+        height: 50px;
+        width: 120px;
+        margin: 0 5vh;
+        text-align: center;
+        font-size: 1.4rem;
+        background: #fff;
+        color: blue;
+        border: 2px solid grey;
+        border-radius: 4rem;
+        display: inline;
+        margin-left: 18rem;
+        padding-left: 1rem;
+        margin-top: 7vh;
+    }
+    @keyframes myFunciton {
+        from{
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+    }
+    @media (max-width: 1200px) {
+        html{
+            font-size: 55%;
+        }
+        
+    }
+    @media (max-width: 991px) {
+        .header{
+          padding: 2rem 3%;
+        }
+        section{
+         padding: 10rem 3% 2rem;
+        }
+    }
+    @media (max-width: 768px){
+        .home{
+            flex-direction: column;
+        }
+        .home-content h3{
+            font-size: 2.6rem;
+        }
+        .home-content  h2{
+            font-size: 5rem;
+        }
+        .button .btn .btn-newer{
+            font-size: 2.8rem;
+
+        }
+        .box-container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+    @media (max-width: 617px) {
+        .box-container{
+            grid-template-columns: 1fr;
+        }
+        
+    }
+    @media (max-width: 365px){
+        html{
+            font-size: 50%;
+        }
+        .box-design .box-container .box{
+            width: 150%;
+        }
+    }
